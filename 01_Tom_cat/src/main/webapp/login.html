@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        .error { color: red; }
+         
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h1 {
+            color: #549d82;
+        }
+        h3 {
+            color: #27ae60;
+        }
+        p {
+            color: #34495e;
+        }
+        
+        button:hover {
+            background-color: #b8d7cb;
+            padding : 10px 40px;
+        }
+        input {
+        margin-top : 15px ;
+        margin-bottom :15px;
+        border-radius : 5px;
+        border : none;
+        padding: 7px 8px;
+        }
+        button{
+         display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #549d82;
+            border : none;
+            color: white;
+            text-decoration: none;
+            padding : 10px 40px;
+            border-radius: 5px;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Hey USER ! LOGIN TO PROCEED</h1>
+    <form action="LoginServlet" method="post">
+        <p>Username :<input type="text" name="user" required><br> </p>
+        <p>Password : <input type="password" name="pwd" required><br></p>
+        <button type="submit" >Login</button>
+    </form>
+</body>
+</html>
